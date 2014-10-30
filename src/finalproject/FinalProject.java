@@ -20,6 +20,8 @@ public class FinalProject {
 		System.out.println("Test Code :)");  //By JJ
                 
         System.out.println("Second test"); //By JJ
+	
+	System.out.println("Diana's Test"); //By DO
                 
            
         
