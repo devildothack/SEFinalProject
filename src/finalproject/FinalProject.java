@@ -17,6 +17,7 @@ public class FinalProject {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Final Project Test");
+		System.out.println("Test Code :)");
         
     }
     
