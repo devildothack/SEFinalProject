@@ -97,3 +97,9 @@ os.arch=amd64
 os.version=6.1
 derby.system.home=C:\Users\Jesse\Documents\NetBeansProjects\SEFinalProject
 Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Nov 04 10:02:11 CST 2014: Shutting down Derby engine
+----------------------------------------------------------------
+Tue Nov 04 10:02:12 CST 2014:
+Shutting down instance 24fa0130-0149-7b84-dc49-00001a23aa22 on database directory C:\Users\Jesse\Documents\NetBeansProjects\SEFinalProject\university with class loader sun.misc.Launcher$AppClassLoader@65450f1f 
+----------------------------------------------------------------
