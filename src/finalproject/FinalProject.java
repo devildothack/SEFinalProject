@@ -21,6 +21,7 @@ public class FinalProject {
         /* Call xml generator JJ */
         CoursesXml cxml = new CoursesXml();
         cxml.writeXml();
+                
 
         //*Call the function to enter data by the user
         userInput myUserInput = new userInput();

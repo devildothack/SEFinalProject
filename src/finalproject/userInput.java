@@ -17,20 +17,19 @@ public class userInput {
     
     public void userInputRun() {
 
-        String prefix = null, number = null, name = null, hour = null, description = null, prerequisites = null;
-        String nameUniv = null, missionUniv = null, visionUniv = null;
+        String prefixCourse = null, numberCourse = null, nameCourse = null, hourCourse = null, descriptionCourse = null, prerequisitesCourse = null;
+        String DepartmentNum = null, DepartmentName = null, DepartmentVision= null, DepartmentMission = null;
         String numberCollege = null, nameCollege = null, missionCollege = null, visionCollege = null;
-        Image logo = null;
         int entries;
 
-        ArrayList dataList = new ArrayList();
+        ArrayList dataListCourses = new ArrayList();
         ArrayList dataListUniv = new ArrayList();
         ArrayList dataListCollege = new ArrayList();
 
         Scanner inputScanner = new Scanner(System.in);
 
-        University currentUniversity = new University(nameUniv, missionUniv, visionUniv, logo);
-        Courses currentCourse = new Courses(prefix, number, name, hour, description, prerequisites);
+        Department currentDepartment = new Department(DepartmentNum, DepartmentName, DepartmentVision, DepartmentMission);
+        Courses currentCourse = new Courses(prefixCourse, numberCourse, nameCourse, hourCourse, descriptionCourse, prerequisitesCourse);
         Colleges currentCollege = new Colleges(numberCollege, nameCollege, missionCollege, visionCollege);
 
         System.out.println("Enter the number of courses:");
@@ -39,46 +38,46 @@ public class userInput {
         for (int i = 0; i < entries; i++) {
 
             System.out.println("Enter course prefix:");
-            currentCourse.setPrefix(inputScanner.next());
+            currentCourse.setPrefixCourse(inputScanner.next());
             System.out.println("enter course number");
-            currentCourse.setNumber(inputScanner.next());
+            currentCourse.setNumberCourse(inputScanner.next());
             System.out.println("enter course name");
-            currentCourse.setName(inputScanner.next());
+            currentCourse.setNameCourse(inputScanner.next());
             System.out.println("enter course hour");
-            currentCourse.setHour(inputScanner.next());
+            currentCourse.setHourCourse(inputScanner.next());
             System.out.println("enter course description");
-            currentCourse.setDescription(inputScanner.next());
+            currentCourse.setDescriptionCourse(inputScanner.next());
             System.out.println("Enter course prerequi");
-            currentCourse.setPrerequisites(inputScanner.next());
+            currentCourse.setPrerequisitesCourse(inputScanner.next());
 
-            dataList.add(currentCourse.getPrefix());
-            dataList.add(currentCourse.getNumber());
-            dataList.add(currentCourse.getName());
-            dataList.add(currentCourse.getHour());
-            dataList.add(currentCourse.getDescription());
-            dataList.add(currentCourse.getPrerequisites());
+            dataListCourses.add(currentCourse.getPrefixCourse());
+            dataListCourses.add(currentCourse.getNumberCourse());
+            dataListCourses.add(currentCourse.getNameCourse());
+            dataListCourses.add(currentCourse.getHourCourse());
+            dataListCourses.add(currentCourse.getDescriptionCourse());
+            dataListCourses.add(currentCourse.getPrerequisitesCourse());
         }
 
-        for (int i = 0; i < dataList.size(); i++) {
-            System.out.println(dataList.get(i).toString());
+        for (int i = 0; i < dataListCourses.size(); i++) {
+            System.out.println(dataListCourses.get(i).toString());
 
         }
 
-        System.out.println("Enter the number of Universities:");
+        System.out.println("Enter the number of Departments");
         entries = inputScanner.nextInt();
 
         for (int i = 0; i < entries; i++) {
 
             System.out.println("Enter name");
-            currentUniversity.setNameUniv(inputScanner.next());
+            currentDepartment.setDepartmentName(inputScanner.next());
             System.out.println("Enter mission:");
-            currentUniversity.setMissionUniv(inputScanner.next());
+            currentDepartment.setDepartmentMission(inputScanner.next());
             System.out.println("Enter vision:");
-            currentUniversity.setVisionUniv(inputScanner.next());
+            currentDepartment.setDepartmentVision(inputScanner.next());
 
-            dataListUniv.add(currentUniversity.getNameUniv());
-            dataListUniv.add(currentUniversity.getMissionUniv());
-            dataListUniv.add(currentUniversity.getVisionUniv());
+            dataListUniv.add(currentDepartment.getDepartmentName());
+            dataListUniv.add(currentDepartment.getDepartmentMission());
+            dataListUniv.add(currentDepartment.getDepartmentVision());
 
         }
 

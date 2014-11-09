@@ -11,107 +11,109 @@ package finalproject;
  */
 public class Courses {
     
-    private String prefix;
-    private String number;
-    private String name;
-    private String hour;
-    private String description;
-    private String prerequisites;
+    private String prefixCourse;
+    private String numberCourse;
+    private String nameCourse;
+    private String hourCourse;
+    private String descriptionCourse;
+    private String prerequisitesCourse;
     
     
     public Courses(String a, String b, String c, String d, String e, String f)
     {
-        this.prefix = a;
-        this.number = b;
-        this.name = c;
-        this.hour = d;
-        this.description = e;
-        this.prerequisites = f;
+        this.prefixCourse = a;
+        this.numberCourse = b;
+        this.nameCourse = c;
+        this.hourCourse = d;
+        this.descriptionCourse = e;
+        this.prerequisitesCourse = f;
         
     }
 
     /**
-     * @return the prefix
+     * @return the prefixCourse
      */
-    public String getPrefix() {
-        return prefix;
+    public String getPrefixCourse() {
+        return prefixCourse;
     }
 
     /**
-     * @param prefix the prefix to set
+     * @param prefixCourse the prefixCourse to set
      */
-    public void setPrefix(String prefix) {
-        this.prefix = prefix;
+    public void setPrefixCourse(String prefixCourse) {
+        this.prefixCourse = prefixCourse;
     }
 
     /**
-     * @return the number
+     * @return the numberCourse
      */
-    public String getNumber() {
-        return number;
+    public String getNumberCourse() {
+        return numberCourse;
     }
 
     /**
-     * @param number the number to set
+     * @param numberCourse the numberCourse to set
      */
-    public void setNumber(String number) {
-        this.number = number;
+    public void setNumberCourse(String numberCourse) {
+        this.numberCourse = numberCourse;
     }
 
     /**
-     * @return the name
+     * @return the nameCourse
      */
-    public String getName() {
-        return name;
+    public String getNameCourse() {
+        return nameCourse;
     }
 
     /**
-     * @param name the name to set
+     * @param nameCourse the nameCourse to set
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setNameCourse(String nameCourse) {
+        this.nameCourse = nameCourse;
     }
 
     /**
-     * @return the hour
+     * @return the hourCourse
      */
-    public String getHour() {
-        return hour;
+    public String getHourCourse() {
+        return hourCourse;
     }
 
     /**
-     * @param hour the hour to set
+     * @param hourCourse the hourCourse to set
      */
-    public void setHour(String hour) {
-        this.hour = hour;
+    public void setHourCourse(String hourCourse) {
+        this.hourCourse = hourCourse;
     }
 
     /**
-     * @return the description
+     * @return the descriptionCourse
      */
-    public String getDescription() {
-        return description;
+    public String getDescriptionCourse() {
+        return descriptionCourse;
     }
 
     /**
-     * @param description the description to set
+     * @param descriptionCourse the descriptionCourse to set
      */
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptionCourse(String descriptionCourse) {
+        this.descriptionCourse = descriptionCourse;
     }
 
     /**
-     * @return the prerequisites
+     * @return the prerequisitesCourse
      */
-    public String getPrerequisites() {
-        return prerequisites;
+    public String getPrerequisitesCourse() {
+        return prerequisitesCourse;
     }
 
     /**
-     * @param prerequisites the prerequisites to set
+     * @param prerequisitesCourse the prerequisitesCourse to set
      */
-    public void setPrerequisites(String prerequisites) {
-        this.prerequisites = prerequisites;
+    public void setPrerequisitesCourse(String prerequisitesCourse) {
+        this.prerequisitesCourse = prerequisitesCourse;
     }
+    
+    
     
 }
