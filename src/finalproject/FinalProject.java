@@ -29,6 +29,8 @@ public class FinalProject {
         myUserInput.userInputRun();
  
 
+        //Create the GUI interface, User Login Window. -DO
+        new LoginFrame();
     }
 
 }
