@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<colleges>
+<college id="0">
+<school>College of Education</school>
+<mission>Our College is committed to provide the best quality education to students in a multicultural and intercultural setting. We deliver undergraduate and graduate programs based on proven best practice, knowledge acquisition, reflective inquiry, critical thinking and respect for the culturally and linguistically diverse learner. We also work to continuously develop a dynamic local, national, and international dimension that promotes innovation and contributes to scientific, educational, economic and social change. The innovative programs and courses at our College serve some 3,800 graduate and undergraduate students every semester. At the undergraduate level, we offer 30 undergraduate programs of which 22 are leading to teacher certification from elementary to post-secondary. In addition, we have non-teacher programs which lead to the B.S. in kinesiology and exercise science. At the graduate level, we offer 15 master's specializations in bilingual education, counseling and guidance, curriculum and instruction, educational leadership, educational technology, English as a second language, health and human performance, and special education. Doctoral candidates in curriculum and instruction can specialize in bilingual studies, educational leadership, educational technology, and higher education teaching.​​​​​​​​​​</mission>
+<department>Educational Psychology and Leadership</department>
+<department>Health and Human Performance</department>
+<department>Language, Literacy and Intercultural Studies</department>
+<department>Teaching, Learning and Innovation</department>
+</college>
+<college id="1">
+<school>College of Nursing</school>
+<mission>Our college is committed to provide high quality nursing education for students and to provide opportunities for life-long learning for nurses. The College of Nursing also recognizes the diversity and uniqueness of the community that it serves, and is committed to the enhancement of the quality of health care through excellence in teaching, research, service, continuing education and the promotion of evidence-based practice.​​​​​​​​​</mission>
+<department>Nursing</department>
+</college>
+<college id="2">
+<school>School of Business</school>
+<mission>The School of Business is committed to educating and preparing students so that they may succeed in their academic career and professional endeavors. UTB/TSC provides a learning environment developed on an innovative curriculum, and offers opportunities for students to become involved in meaningful projects and internships that allow them to acquire experience while contributing to the reinforcement and expansion of their academic knowledge. The programs offered at the School of Business include an Associate of Arts in Business Administration, a Bachelor of Business Administration with different options in specialization and an M.B.A. These programs have been carefully designed with the purpose of helping students gain a well-rounded understanding of the various facets of the business world. The material is reinforced through research assignments, which serve to clarify relevant dimensions and prepare students to address key decisions in innovative ways. Furthermore, academic-level standards have been set high in order to offer students the opportunity to develop integrative, critical thinking, leadership and communication skills and to acquire an ample base of technical skills required for their profession.</mission>
+<department>Accounting and Management Information Systems</department>
+<department>Applied Business Technology</department>
+<department>Finance and Economics</department>
+<department>Management and Marketing</department>
+</college>
+<college id="3">
+<school>College of Liberal Arts</school>
+<mission>The College of Liberal Arts is the largest and most diverse college of the University. It is comprised of ten academic departments — Behavioral Sciences, Criminal Justice, English, Communication, Government, History, Modern Languages, Music, and Visual Arts — and offers nearly 40 undergraduate programs of study and over one dozen graduate degrees. The 130 dedicated faculty members of the College of Liberal Arts comprise a vibrant community of teachers and scholars who share with their students their passion and knowledge of the arts, literature and history, and well as human and behavioral cultures. The College also supports specialized and innovative programs in Architecture, Forensic Investigation as well as a Spanish Translation and Interpreting Studies. Additionally the College of Liberal Arts provides cultural access and educational opportunities for the people of the Rio Grande Valley through its sponsorship and support of the Patron of the Arts Series, the Letras en el Estuario Binational Conference in Hispanic Letters, the creative writing journal, El Novostanderino, the Sabal Palms Writing Project, the South Texas Victim Symposium, the Texas Center for Border and Transnational Studies, and many other activities.</mission>
+<department>Behavioral Sciences</department>
+<department>Communications</department>
+<department>Criminal Justice</department>
+<department>English</department>
+<department>Government</department>
+<department>History</department>
+<department>Modern Languages</department>
+<department>Music</department>
+<department>Visual Arts</department>
+</college>
+<college id="4">
+<school>College of Science, Math and Technology</school>
+<mission>The College of Science at The University of Texas at Brownsville combines a strong commitment to high undergraduate education with the very best of a top-tier research university. Our focus is undergraduate and graduate education, and we provide opportunities to achieve your educational goals, whatever they are, from a bachelor's degree up to cooperative Ph.D. degree. Our strong and diverse faculty — many of whom are leading experts in the fields of science, medicine, mathematics, computer science, engineering and technology — will prepare you for the career of your choice.</mission>
+<department>Biological Sciences</department>
+<department>Chemistry and Environmental Sciences</department>
+<department>Computer Information Sciences</department>
+<department>Engineering Department</department>
+<department>Mathematics</department>
+<department>Physics and Astronomy</department>
+</college>
+<college id="5">
+<school>College of Biomedical Sciences and Health Professions</school>
+<mission>The department of Biomedicine is currently under development in conjunction with a UT System initiative in Medical Education.</mission>
+<department>Allied Health</department>
+</college>
+</colleges>
