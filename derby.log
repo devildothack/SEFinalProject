@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Wed Nov 05 09:52:01 CST 2014 : Apache Derby Network Server - 10.8.3.2 - (1557835) started and ready to accept connections on port 1527
 ----------------------------------------------------------------
 Wed Nov 05 09:52:05 CST 2014:
@@ -203,6 +204,14 @@ Wed Nov 05 09:57:09 CST 2014:
 Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.3.2 - (1557835): instance f81e0010-0149-80a7-d013-00001a23aa22 
 on database directory C:\Users\Jesse\Documents\NetBeansProjects\SEFinalProject\university  with class loader sun.misc.Launcher$AppClassLoader@33d626a4 
 Loaded from file:/C:/Program%20Files/Java/jdk1.7.0_65/db/lib/derby.jar
+=======
+Wed Nov 05 10:08:16 CST 2014 : Apache Derby Network Server - 10.10.1.3 - (1557168) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Nov 05 10:08:16 CST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.3 - (1557168): instance a816c00e-0149-80b6-ae48-00005d7edb6b 
+on database directory C:\Users\jesus\Documents\GitHub\SEFinalProject\university with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_20/db/lib/derby.jar
+>>>>>>> origin/master
 java.vendor=Oracle Corporation
 java.runtime.version=1.7.0_65-b19
 user.dir=C:\Program Files\Java\jdk1.7.0_65\db
@@ -212,6 +221,7 @@ os.version=6.1
 derby.system.home=C:\Users\Jesse\Documents\NetBeansProjects\SEFinalProject
 Database Class Loader started - derby.database.classpath=''
 ----------------------------------------------------------------
+<<<<<<< HEAD
 Wed Nov 05 09:57:09 CST 2014:
 Shutting down instance f81e0010-0149-80a7-d013-00001a23aa22 on database directory C:\Users\Jesse\Documents\NetBeansProjects\SEFinalProject\university with class loader sun.misc.Launcher$AppClassLoader@33d626a4 
 Wed Nov 05 09:57:09 CST 2014 Thread[DRDAConnThread_3,5,main] Cleanup action starting
@@ -604,6 +614,16 @@ java.sql.SQLException: Database 'university' not found.
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+=======
+Wed Nov 05 10:08:17 CST 2014:
+Shutting down instance a816c00e-0149-80b6-ae48-00005d7edb6b on database directory C:\Users\jesus\Documents\GitHub\SEFinalProject\university with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Wed Nov 05 10:08:17 CST 2014 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'university' with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa, see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+>>>>>>> origin/master
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
@@ -617,20 +637,58 @@ java.sql.SQLException: Database 'university' not found.
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+<<<<<<< HEAD
 Caused by: java.sql.SQLException: Database 'university' not found.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 19 more
 ============= begin nested exception, level (1) ===========
 java.sql.SQLException: Database 'university' not found.
+=======
+Caused by: java.sql.SQLException: Failed to start database 'university' with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa, see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 17 more
+Caused by: java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+>>>>>>> origin/master
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
-	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+<<<<<<< HEAD
 	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+=======
+	... 14 more
+Caused by: ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+>>>>>>> origin/master
 	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
 	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
@@ -644,9 +702,322 @@ java.sql.SQLException: Database 'university' not found.
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 16 more
+Caused by: ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
 ============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+============= end nested exception, level (2) ===========
+============= begin nested exception, level (3) ===========
+ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (3) ===========
 Cleanup action completed
+<<<<<<< HEAD
 Wed Nov 05 10:07:15 CST 2014 Thread[DRDAConnThread_3,5,main] (DATABASE = university), (DRDAID = {4}), Database 'university' not found.
 ----------------------------------------------------------------
 Wed Nov 05 11:55:17 CST 2014: Shutting down Derby engine
 ----------------------------------------------------------------
+=======
+Wed Nov 05 10:08:17 CST 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = university), (DRDAID = {1}), Failed to start database 'university' with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa, see the next exception for details.
+Wed Nov 05 10:08:17 CST 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = university), (DRDAID = {1}), Statement 'getUDTs' already exists in Schema 'SYS'.
+----------------------------------------------------------------
+Wed Nov 05 10:08:21 CST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.3 - (1557168): instance f81e0010-0149-80b6-ae48-00005d7edb6b 
+on database directory C:\Users\jesus\Documents\GitHub\SEFinalProject\university with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_20/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_20-b26
+user.dir=C:\Program Files\Java\jdk1.8.0_20\db
+os.name=Windows 8.1
+os.arch=amd64
+os.version=6.3
+derby.system.home=C:\Users\jesus\Documents\GitHub\SEFinalProject
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Nov 05 10:08:21 CST 2014:
+Shutting down instance f81e0010-0149-80b6-ae48-00005d7edb6b on database directory C:\Users\jesus\Documents\GitHub\SEFinalProject\university with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Wed Nov 05 10:08:21 CST 2014 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Failed to start database 'university' with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa, see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.seeNextException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Failed to start database 'university' with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa, see the next exception for details.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 17 more
+Caused by: java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	... 14 more
+Caused by: ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 16 more
+Caused by: ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+============= end nested exception, level (1) ===========
+============= begin nested exception, level (2) ===========
+java.sql.SQLException: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	... 14 more
+============= end nested exception, level (2) ===========
+============= begin nested exception, level (3) ===========
+ERROR X0Y32: Statement 'getUDTs' already exists in Schema 'SYS'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.addSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSPSSet(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.createSystemSps(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.updateMetadataSPSes(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.handleMinorRevisionChange(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DD_Version.upgradeIfNeeded(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.loadDictionaryTables(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startModule(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.bootServiceModule(Unknown Source)
+	at org.apache.derby.impl.db.BasicDatabase.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.boot(Unknown Source)
+	at org.apache.derby.impl.services.monitor.TopService.bootModule(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.bootService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startProviderService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.findProviderAndStartService(Unknown Source)
+	at org.apache.derby.impl.services.monitor.BaseMonitor.startPersistentService(Unknown Source)
+	at org.apache.derby.iapi.services.monitor.Monitor.startPersistentService(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.bootDatabase(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (3) ===========
+Cleanup action completed
+Wed Nov 05 10:08:21 CST 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = university), (DRDAID = {2}), Failed to start database 'university' with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa, see the next exception for details.
+Wed Nov 05 10:08:21 CST 2014 Thread[DRDAConnThread_2,5,main] (DATABASE = university), (DRDAID = {2}), Statement 'getUDTs' already exists in Schema 'SYS'.
+>>>>>>> origin/master

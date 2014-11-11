@@ -56,8 +56,8 @@ public class CoursesXml {
             Transformer trans = TransformerFactory.newInstance().newTransformer();
             trans.setOutputProperty(OutputKeys.INDENT, "yes");
             DOMSource source = new DOMSource(doc);
-            //StreamResult result = new StreamResult(System.out);
-            StreamResult result = new StreamResult(new File("courses.xml"));
+            StreamResult result = new StreamResult(System.out);
+            //StreamResult result = new StreamResult(new File("courses.xml"));
             trans.transform(source, result);
             
         }catch (Exception e){

@@ -5,9 +5,6 @@
  */
 package finalproject;
 
-import java.awt.Image;
-import java.util.ArrayList;
-import java.util.Scanner;
 
 /**
  *
@@ -22,6 +19,7 @@ public class FinalProject {
         // TODO code application logic here
 
         /* Call xml generator JJ */
+<<<<<<< HEAD
 //        CoursesXml cxml = new CoursesXml();
 //        cxml.writeXml();
 //
@@ -29,11 +27,21 @@ public class FinalProject {
 //        userInput myUserInput = new userInput();
 //        
 //        myUserInput.userInputRun();
+=======
+        CoursesXml cxml = new CoursesXml();
+        cxml.writeXml();
+                
+
+        //*Call the function to enter data by the user
+        userInput myUserInput = new userInput();
+>>>>>>> origin/master
         
         CollegesXml d = new CollegesXml();
         d.writeXml();
  
 
+        //Create the GUI interface, User Login Window. -DO
+        new LoginFrame();
     }
 
 }
