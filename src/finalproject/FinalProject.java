@@ -18,30 +18,25 @@ public class FinalProject {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        /* Call xml generator JJ */
-<<<<<<< HEAD
+        //Create local XML database - Jesus J.
 //        CoursesXml cxml = new CoursesXml();
+//        CollegesXml collegexml = new CollegesXml();
+//        FacultyXml facultyxml = new FacultyXml();
 //        cxml.writeXml();
-//
-//        //*Call the function to enter data by the user
-//        userInput myUserInput = new userInput();
-//        
-//        myUserInput.userInputRun();
-=======
-        CoursesXml cxml = new CoursesXml();
-        cxml.writeXml();
-                
-
-        //*Call the function to enter data by the user
-        userInput myUserInput = new userInput();
->>>>>>> origin/master
+//        collegexml.writeXml();
         
-        CollegesXml d = new CollegesXml();
-        d.writeXml();
- 
-
-        //Create the GUI interface, User Login Window. -DO
-        new LoginFrame();
+        //Accept user inputs for data - Jesus V.
+//        userInput inputData = new userInput();
+//        inputData.userInputRun();
+        
+        //Creates the login/splash screen -Sandra
+        SplashScreen splash = new SplashScreen(10000);
+        splash.showSplashAndExit();
+        
+        //Creates the GUI interface - Diana
+        StartGUI startProgram = new StartGUI();
+        startProgram.StartGUI();
+        
     }
 
 }
