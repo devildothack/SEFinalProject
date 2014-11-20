@@ -32,22 +32,22 @@ public class userInput {
         Colleges currentCollege = new Colleges(numberCollege, nameCollege, missionCollege, visionCollege);
 
         System.out.println("Enter the number of courses:");
-        entries = inputScanner.nextInt();
+        entries = Integer.valueOf(inputScanner.nextLine());
 
         for (int i = 0; i < entries; i++) {
 
             System.out.println("Enter course prefix:");
-            currentCourse.setPrefixCourse(inputScanner.next());
+            currentCourse.setPrefixCourse(inputScanner.nextLine());
             System.out.println("enter course number");
-            currentCourse.setNumberCourse(inputScanner.next());
+            currentCourse.setNumberCourse(inputScanner.nextLine());
             System.out.println("enter course name");
-            currentCourse.setNameCourse(inputScanner.next());
+            currentCourse.setNameCourse(inputScanner.nextLine());
             System.out.println("enter course hour");
-            currentCourse.setHourCourse(inputScanner.next());
+            currentCourse.setHourCourse(inputScanner.nextLine());
             System.out.println("enter course description");
-            currentCourse.setDescriptionCourse(inputScanner.next());
+            currentCourse.setDescriptionCourse(inputScanner.nextLine());
             System.out.println("Enter course prerequi");
-            currentCourse.setPrerequisitesCourse(inputScanner.next());
+            currentCourse.setPrerequisitesCourse(inputScanner.nextLine());
 
             dataListCourses.add(currentCourse.getPrefixCourse());
             dataListCourses.add(currentCourse.getNumberCourse());
@@ -57,22 +57,25 @@ public class userInput {
             dataListCourses.add(currentCourse.getPrerequisitesCourse());
         }
 
-        for (int i = 0; i < dataListCourses.size(); i++) {
+        System.out.println("------------------OUTPUT BELOW-----------------");
+        for (int i = 0; i < dataListCourses.size(); i++) 
+        {
+            
             System.out.println(dataListCourses.get(i).toString());
 
         }
 
         System.out.println("Enter the number of Departments");
-        entries = inputScanner.nextInt();
+        entries = Integer.valueOf(inputScanner.nextLine());
 
         for (int i = 0; i < entries; i++) {
 
             System.out.println("Enter name");
-            currentDepartment.setDepartmentName(inputScanner.next());
+            currentDepartment.setDepartmentName(inputScanner.nextLine());
             System.out.println("Enter mission:");
-            currentDepartment.setDepartmentMission(inputScanner.next());
+            currentDepartment.setDepartmentMission(inputScanner.nextLine());
             System.out.println("Enter vision:");
-            currentDepartment.setDepartmentVision(inputScanner.next());
+            currentDepartment.setDepartmentVision(inputScanner.nextLine());
 
             dataListUniv.add(currentDepartment.getDepartmentName());
             dataListUniv.add(currentDepartment.getDepartmentMission());
@@ -86,18 +89,18 @@ public class userInput {
         }
 
         System.out.println("Enter the number of colleges to be entered:");
-        entries = inputScanner.nextInt();
+        entries = Integer.valueOf(inputScanner.nextLine());
 
         for (int i = 0; i < entries; i++) {
 
             System.out.println("college number:");
-            currentCollege.setNumberCollege(inputScanner.next());
+            currentCollege.setNumberCollege(inputScanner.nextLine());
             System.out.println("college name");
-            currentCollege.setNameCollege(inputScanner.next());
+            currentCollege.setNameCollege(inputScanner.nextLine());
             System.out.println("college mission");
-            currentCollege.setMissionCollege(inputScanner.next());
+            currentCollege.setMissionCollege(inputScanner.nextLine());
             System.out.println("college vision");
-            currentCollege.setVisionCollege(inputScanner.next());
+            currentCollege.setVisionCollege(inputScanner.nextLine());
 
             dataListCollege.add(currentCollege.getNumberCollege());
             dataListCollege.add(currentCollege.getNameCollege());

@@ -8,6 +8,8 @@ package finalproject;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -59,8 +61,26 @@ public class departmentFrame extends JFrame{
         JTextField departmentcvfilefield = new JTextField(30);
         departmentcvfilefield.setPreferredSize(new Dimension(300, 30));
         
-        JButton inputButton = new JButton("input");
-        inputButton.setPreferredSize(new Dimension(150, 30));
+        JButton saveButton = new JButton("save");
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+  
+
+            }
+        });
+        
+        JButton cancelButton = new JButton("cancel");
+        cancelButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                //setVisible(false);
+                dispose();
+
+            }
+        });
         
         add(departmentName);
         add(departmentfield);
@@ -74,6 +94,11 @@ public class departmentFrame extends JFrame{
         add(departmentbackgroundfield);
         add(departmentCVFile);
         add(departmentcvfilefield);
-        add(inputButton);
+        add(saveButton);
+        add(cancelButton);
+    //p1.setMaximumSize(new Dimension(50, 50));
+    //p1.setBackground(utborange2);
+    //p1.setBorder(myBorder2);
+        //add(p2, BorderLayout.CENTER);
     }
 }

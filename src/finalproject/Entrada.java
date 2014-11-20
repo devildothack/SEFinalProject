@@ -79,6 +79,7 @@ public class Entrada extends JFrame implements ActionListener {
 
     }
 
+    @Override
     public void actionPerformed(ActionEvent e) {
         if (username.getText().equals("admin") && password.getText().equals("123")) {
             JOptionPane.showMessageDialog(null, "Logged in");

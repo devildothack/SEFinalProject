@@ -19,11 +19,11 @@ public class FinalProject {
         // TODO code application logic here
 
         //Create local XML database - Jesus J.
-//        CoursesXml cxml = new CoursesXml();
-//        CollegesXml collegexml = new CollegesXml();
-//        FacultyXml facultyxml = new FacultyXml();
-//        cxml.writeXml();
-//        collegexml.writeXml();
+        CoursesXml cxml = new CoursesXml();
+        CollegesXml collegexml = new CollegesXml();
+        FacultyXml facultyxml = new FacultyXml();
+        cxml.writeXml();
+        collegexml.writeXml();
         
         //Accept user inputs for data - Jesus V.
 //        userInput inputData = new userInput();
