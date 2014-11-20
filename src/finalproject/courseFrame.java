@@ -8,6 +8,8 @@ package finalproject;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -20,6 +22,7 @@ import javax.swing.JTextField;
 public class courseFrame extends JFrame{
     public courseFrame()
     {
+        //JPanel p2 = new JPanel();
         setLayout(new FlowLayout(FlowLayout.CENTER, 5, 5));
         
         JLabel coursePrefix = new JLabel("Course Prefix:");
@@ -52,7 +55,25 @@ public class courseFrame extends JFrame{
         JTextField coursedescriptionfield = new JTextField(30);
         coursedescriptionfield.setPreferredSize(new Dimension(300, 175));
         
-        JButton inputButton = new JButton("input");
+        JButton saveButton = new JButton("save");
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+  
+
+            }
+        });
+        
+        JButton cancelButton = new JButton("cancel");
+        cancelButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+
+                //setVisible(false);
+                dispose();
+
+            }
+        });
         
         add(coursePrefix);
         add(courseprefixfield);
@@ -64,6 +85,11 @@ public class courseFrame extends JFrame{
         add(coursehoursfield);
         add(courseDescription);
         add(coursedescriptionfield);
-        add(inputButton);
+        add(saveButton);
+        add(cancelButton);
+    //p1.setMaximumSize(new Dimension(50, 50));
+    //p1.setBackground(utborange2);
+    //p1.setBorder(myBorder2);
+        //add(p2, BorderLayout.CENTER);
     }
 }

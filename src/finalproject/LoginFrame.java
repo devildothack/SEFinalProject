@@ -28,10 +28,12 @@ public class loginFrame extends JFrame {
     
     public loginFrame()
     {
+        
         login.setLayout(new GridLayout(6, 1));
         login.setTitle("Login");
         login.setSize(300, 400);
         login.setVisible(true);
+        //login.setDefaultCloseOperation(GUI.EXIT_ON_CLOSE);
         login.add(utblabel);
         JLabel email = new JLabel("Email Address");
         email.setPreferredSize(new Dimension(100, 10));
@@ -47,10 +49,12 @@ public class loginFrame extends JFrame {
         login.add(passwordfield);
         login.add(loginbutton);
         loginbutton.addActionListener(new ActionListener(){
+            @Override
             public void actionPerformed(ActionEvent ae){
                 login.dispose();
-                new application();
+                application application = new application();
             }
         });
     }
 }
+

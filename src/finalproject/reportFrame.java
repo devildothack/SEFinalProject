@@ -45,5 +45,9 @@ public class reportFrame extends JFrame{
         add(xmlCheckBox);
         add(pdfCheckBox);
         add(doReportButton);
+    //p1.setMaximumSize(new Dimension(50, 50));
+    //p1.setBackground(utborange2);
+    //p1.setBorder(myBorder2);
+        //add(p2, BorderLayout.CENTER);
     }
 }

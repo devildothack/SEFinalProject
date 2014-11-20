@@ -15,7 +15,7 @@ import javax.swing.*;
  */
 public class SplashScreen extends JWindow {
 
-    private int duration;
+    private final int duration;
 
     public SplashScreen(int d) {
         duration = d;
@@ -44,7 +44,7 @@ public class SplashScreen extends JWindow {
         try {
             Thread.sleep(duration);
             this.dispose();
-            new Entrada();
+            Entrada entrada = new Entrada();
         } catch (Exception e) {
         }
         setVisible(false);

@@ -87,7 +87,8 @@ public class MyFrame extends JFrame {
         logo.setVerticalTextPosition(SwingConstants.BOTTOM);
         
         //Tree Panel
-        JPanel p2 = new JPanel(new BorderLayout());
+        //JPanel p2 = new JPanel();
+        JPanel p2 = new TreePanel();
         p2.setLayout(new FlowLayout());
         p2.setPreferredSize(new Dimension(150, 450));
         p2.setBackground(utborange2);
@@ -99,7 +100,9 @@ public class MyFrame extends JFrame {
         p3.setBackground(Color.GRAY);
         p3.setBorder(myBorder3);
         
-        JTextArea textArea = new JTextArea(5, 30);
+        //ReadXMLFiles readXmlfiles = new ReadXMLFiles();
+        JTextArea textArea = new JTextArea("Testing text area bla bla bla");
+       
         JScrollPane scrollPane = new JScrollPane(textArea);
         scrollPane.setPreferredSize(new Dimension(580, 410));
         p3.add(scrollPane, BorderLayout.CENTER);
@@ -120,9 +123,10 @@ public class MyFrame extends JFrame {
         collegeinputbtn.setPressedIcon(collegeinputp);
         collegeinputbtn.setRolloverIcon(collegeinputr);
         collegeinputbtn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent ae) {
 
-                new application2();
+                application2 application2 = new application2();
 
             }
         });
@@ -135,9 +139,10 @@ public class MyFrame extends JFrame {
         departmentinputbtn.setPressedIcon(departmentinputp);
         departmentinputbtn.setRolloverIcon(departmentinputr);
         departmentinputbtn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent ae) {
 
-                new application3();
+                application3 application3 = new application3();
 
             }
         });
@@ -152,7 +157,7 @@ public class MyFrame extends JFrame {
         courseinputbtn.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
 
-                new application4();
+                application4 application4 = new application4();
 
             }
         });
@@ -176,6 +181,14 @@ public class MyFrame extends JFrame {
         homebtn.setOpaque(false);
         homebtn.setPressedIcon(homep);
         homebtn.setRolloverIcon(homer);
+        homebtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                
+
+            }
+        });
 
         JButton collegesbtn = new JButton(colleges);
         collegesbtn.setBorderPainted(false);
@@ -184,6 +197,14 @@ public class MyFrame extends JFrame {
         collegesbtn.setOpaque(false);
         collegesbtn.setPressedIcon(collegesp);
         collegesbtn.setRolloverIcon(collegesr);
+        collegesbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                //new application2();
+
+            }
+        });
         
         JButton departmentsbtn = new JButton(departments);
         departmentsbtn.setBorderPainted(false);
@@ -192,6 +213,14 @@ public class MyFrame extends JFrame {
         departmentsbtn.setOpaque(false);
         departmentsbtn.setPressedIcon(departmentsp);
         departmentsbtn.setRolloverIcon(departmentsr);
+        departmentsbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                //new application2();
+
+            }
+        });
         
         JButton programsbtn = new JButton(programs);
         programsbtn.setBorderPainted(false);
@@ -200,6 +229,13 @@ public class MyFrame extends JFrame {
         programsbtn.setOpaque(false);
         programsbtn.setPressedIcon(programsp);
         programsbtn.setRolloverIcon(programsr);
+        programsbtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+
+                //new application2();
+
+            }
+        });
         
         JButton coursesbtn = new JButton(courses);
         coursesbtn.setBorderPainted(false);
@@ -208,6 +244,13 @@ public class MyFrame extends JFrame {
         coursesbtn.setOpaque(false);
         coursesbtn.setPressedIcon(coursesp);
         coursesbtn.setRolloverIcon(coursesr);
+        coursesbtn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+
+                application2 application2 = new application2();
+
+            }
+        });
 
         JButton reportwizbtn = new JButton(reportwizard);
         reportwizbtn.setBorderPainted(false);
@@ -217,9 +260,10 @@ public class MyFrame extends JFrame {
         reportwizbtn.setPressedIcon(reportwizardp);
         reportwizbtn.setRolloverIcon(reportwizardr);
         reportwizbtn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent ae) {
 
-                new application5();
+                application5 application5 = new application5();
 
             }
         });
