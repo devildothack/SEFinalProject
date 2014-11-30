@@ -21,9 +21,9 @@ public class SplashScreen extends JWindow {
         duration = d;
     }
 
-    public void showSplash() {
+    public void runSplash() {
         JPanel content = (JPanel) getContentPane();
-        ImageIcon content2 = new ImageIcon(getClass().getResource("/images/utbsplash.gif"));
+        ImageIcon content2 = new ImageIcon(getClass().getResource("/images/projlogo2.gif"));
         AWTUtilities.setWindowOpaque(this, false);
 
         
@@ -35,23 +35,17 @@ public class SplashScreen extends JWindow {
         setBounds(x, y, width, height);
 
         JLabel label = new JLabel(content2);
-        JLabel copyrt = new JLabel("Copyright 2014, UTB", JLabel.CENTER);
-        copyrt.setFont(new Font("Arial", Font.BOLD, 12));
         content.add(label, BorderLayout.CENTER);
-        content.add(copyrt, BorderLayout.SOUTH);
         setVisible(true);
 
         try {
             Thread.sleep(duration);
             this.dispose();
-            Entrada entrada = new Entrada();
+            loginFrame login = new loginFrame();
+            login.loginFrameRun();
         } catch (Exception e) {
         }
         setVisible(false);
     }
-
-    public void showSplashAndExit() {
-        showSplash();
-
-    }
+    
 }

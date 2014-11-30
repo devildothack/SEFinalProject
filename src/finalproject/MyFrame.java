@@ -13,11 +13,14 @@ import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -29,6 +32,9 @@ import javax.swing.border.Border;
  * @author Dalia
  */
 public class MyFrame extends JFrame {
+    
+    JFrame mainframe = new JFrame();
+    JPanel p1 = new JPanel();
 
     ImageIcon collegeinput = new ImageIcon(getClass().getResource("/images/collegeinput.png"));
     ImageIcon collegeinputp = new ImageIcon(getClass().getResource("/images/collegeinputp.png"));
@@ -62,7 +68,17 @@ public class MyFrame extends JFrame {
     ImageIcon utblogo = new ImageIcon(getClass().getResource("/images/utblogo.png"));
     ImageIcon utbocelot = new ImageIcon(getClass().getResource("/images/utbocelot.png"));
     ImageIcon utbwhitelogo = new ImageIcon(getClass().getResource("/images/utbwhitelogo.png"));
-    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/utblogo.png"));
+    
+    ImageIcon facultyinput = new ImageIcon(getClass().getResource("/images/facultyinput.png"));
+    ImageIcon facultyinputr = new ImageIcon(getClass().getResource("/images/facultyinputr.png"));
+    ImageIcon facultyinputp = new ImageIcon(getClass().getResource("/images/facultyinputp.png"));
+    
+    ImageIcon programinput = new ImageIcon(getClass().getResource("/images/programinput.png"));
+    ImageIcon programinputr = new ImageIcon(getClass().getResource("/images/programinputr.png"));
+    ImageIcon programinputp = new ImageIcon(getClass().getResource("/images/programinputp.png"));
+    
+
+    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/SElogo25px.png"));
 
     Color utborange = new Color(182, 101, 19);
     Color utborange2 = new Color(229, 157, 84);
@@ -72,10 +88,27 @@ public class MyFrame extends JFrame {
     Border myBorder3 = BorderFactory.createMatteBorder(0, 3, 0, 3, utbblue);
 
     public MyFrame() {
-        setIconImage(image);
+        
+        mainframe.setTitle("University of Texas at Brownsville");
+        mainframe.setSize(900, 700);
+        mainframe.setResizable( false );
+        mainframe.setVisible(true);
+        mainframe.setLocationRelativeTo(null);
+        mainframe.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+        mainframe.addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent evt) {
+                int confirm = JOptionPane.showOptionDialog(null, "Are You Sure to Close Application?", "Exit Confirmation", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+                if (confirm == 0) {
+                    System.exit(0);
+                }
+            }
+        });
+        
+        
+        mainframe.setIconImage(image);
 
         //Banner Panel
-        JPanel p1 = new JPanel();
+//        JPanel p1 = new JPanel();
         p1.setLayout(new FlowLayout());
         p1.setPreferredSize(new Dimension(900, 150));
         p1.setBackground(utborange);
@@ -94,18 +127,18 @@ public class MyFrame extends JFrame {
         p2.setBackground(utborange2);
         
         //Text Panel
-        JPanel p3 = new JPanel();
+        JPanel p3 = new DisplayPanel();
         p3.setLayout(new FlowLayout());
         p3.setPreferredSize(new Dimension(600, 450));
         p3.setBackground(Color.GRAY);
         p3.setBorder(myBorder3);
         
         //ReadXMLFiles readXmlfiles = new ReadXMLFiles();
-        JTextArea textArea = new JTextArea("Testing text area bla bla bla");
-       
-        JScrollPane scrollPane = new JScrollPane(textArea);
-        scrollPane.setPreferredSize(new Dimension(580, 410));
-        p3.add(scrollPane, BorderLayout.CENTER);
+//        JTextArea textArea = new JTextArea();
+//       
+//        JScrollPane scrollPane = new JScrollPane(textArea);
+//        scrollPane.setPreferredSize(new Dimension(580, 410));
+//        p3.add(scrollPane, BorderLayout.CENTER);
 
         //User Panel
         JPanel p4 = new JPanel();
@@ -126,7 +159,7 @@ public class MyFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent ae) {
 
-                application2 application2 = new application2();
+                collegeFrame collegeFrame = new collegeFrame();
 
             }
         });
@@ -142,7 +175,39 @@ public class MyFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent ae) {
 
-                application3 application3 = new application3();
+                departmentFrame departmentFrame = new departmentFrame();
+
+            }
+        });
+        
+        JButton facultyinputbtn = new JButton(facultyinput);
+        facultyinputbtn.setBorderPainted(false);
+        facultyinputbtn.setContentAreaFilled(false);
+        facultyinputbtn.setFocusPainted(false);
+        facultyinputbtn.setOpaque(false);
+        facultyinputbtn.setPressedIcon(facultyinputp);
+        facultyinputbtn.setRolloverIcon(facultyinputr);
+        facultyinputbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                facultyFrame facultyFrame = new facultyFrame();
+
+            }
+        });
+        
+        JButton programinputbtn = new JButton(programinput);
+        programinputbtn.setBorderPainted(false);
+        programinputbtn.setContentAreaFilled(false);
+        programinputbtn.setFocusPainted(false);
+        programinputbtn.setOpaque(false);
+        programinputbtn.setPressedIcon(programinputp);
+        programinputbtn.setRolloverIcon(programinputr);
+        programinputbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent ae) {
+
+                programFrame programFrame = new programFrame();
 
             }
         });
@@ -155,9 +220,10 @@ public class MyFrame extends JFrame {
         courseinputbtn.setPressedIcon(courseinputp);
         courseinputbtn.setRolloverIcon(courseinputr);
         courseinputbtn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent ae) {
 
-                application4 application4 = new application4();
+                courseFrame courseFrame = new courseFrame();
 
             }
         });
@@ -165,6 +231,8 @@ public class MyFrame extends JFrame {
         p4.add(userinput);
         p4.add(collegeinputbtn);
         p4.add(departmentinputbtn);
+        p4.add(facultyinputbtn);
+        p4.add(programinputbtn);
         p4.add(courseinputbtn);
         
         //Button Panel
@@ -230,6 +298,7 @@ public class MyFrame extends JFrame {
         programsbtn.setPressedIcon(programsp);
         programsbtn.setRolloverIcon(programsr);
         programsbtn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent ae) {
 
                 //new application2();
@@ -245,9 +314,10 @@ public class MyFrame extends JFrame {
         coursesbtn.setPressedIcon(coursesp);
         coursesbtn.setRolloverIcon(coursesr);
         coursesbtn.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent ae) {
 
-                application2 application2 = new application2();
+                //application2 application2 = new application2();
 
             }
         });
@@ -263,7 +333,7 @@ public class MyFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent ae) {
 
-                application5 application5 = new application5();
+                reportFrame reportFrame = new reportFrame();
 
             }
         });
@@ -280,10 +350,10 @@ public class MyFrame extends JFrame {
 
 
 
-        add(p1, BorderLayout.NORTH);
-        add(p2, BorderLayout.WEST);
-        add(p3, BorderLayout.CENTER);
-        add(p4, BorderLayout.EAST);
-        add(p5, BorderLayout.SOUTH);
+        mainframe.add(p1, BorderLayout.NORTH);
+        mainframe.add(p2, BorderLayout.WEST);
+        mainframe.add(p3, BorderLayout.CENTER);
+        mainframe.add(p4, BorderLayout.EAST);
+        mainframe.add(p5, BorderLayout.SOUTH);
     }
 }

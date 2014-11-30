@@ -58,11 +58,8 @@ public class userInput {
         }
 
         System.out.println("------------------OUTPUT BELOW-----------------");
-        for (int i = 0; i < dataListCourses.size(); i++) 
-        {
-            
-            System.out.println(dataListCourses.get(i).toString());
-
+        for (Object dataListCourse : dataListCourses) {
+            System.out.println(dataListCourse.toString());
         }
 
         System.out.println("Enter the number of Departments");
@@ -83,9 +80,8 @@ public class userInput {
 
         }
 
-        for (int i = 0; i < dataListUniv.size(); i++) {
-            System.out.println(dataListUniv.get(i).toString());
-
+        for (Object dataListUniv1 : dataListUniv) {
+            System.out.println(dataListUniv1.toString());
         }
 
         System.out.println("Enter the number of colleges to be entered:");
@@ -109,9 +105,8 @@ public class userInput {
 
         }
 
-        for (int i = 0; i < dataListCollege.size(); i++) {
-            System.out.println(dataListCollege.get(i).toString());
-
+        for (Object dataListCollege1 : dataListCollege) {
+            System.out.println(dataListCollege1.toString());
         }
 
     }

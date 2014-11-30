@@ -31,11 +31,7 @@ public class FinalProject {
         
         //Creates the login/splash screen -Sandra
         SplashScreen splash = new SplashScreen(10000);
-        splash.showSplashAndExit();
-        
-        //Creates the GUI interface - Diana
-        StartGUI startProgram = new StartGUI();
-        startProgram.StartGUI();
+        splash.runSplash();
         
     }
 

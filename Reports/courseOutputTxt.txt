@@ -1,0 +1,451 @@
+-------------------------------------------
+
+Current Element :course
+Course id : 0
+Course name : Computer Architecture
+Course prefix : COSC-3325
+Course description : Combinational and sequential logic (reinforced by several lab projects) are studied leading to the design of a processor. Hardware description languages in conjunction with hardwired/microprogramming controllers are studied. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2312, COSC 2336, and PHYS 2326 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 1
+Course name : Algorithm Analysis
+Course prefix : COSC-3345
+Course description : Concepts of creating, storing, retrieving, ordering, and manipulation of data structures are introduced via programming intensive projects. Formal specification of data structures in programming languages is studied in depth. Algorithms used are analyzed for their space and time complexity. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2336 and MATH 2414 with a "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 2
+Course name : Principles of Programming Languages
+Course prefix : COSC-3355
+Course description : This course is a theory of programming languages, including Syntax and semantics of a language, scoping, binding, storage allocation, procedures and data objects, data-directed programming, object-oriented programming, and other modern programming concepts. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2325 and COSC 2336 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 3
+Course name : Senior Project
+Course prefix : COSC-4190
+Course description : Students will develop a project and give a presentation to a faculty committee under the guidance of a faculty project advisor. Lab 3, Cr 1.
+Course prerequisite : COSC 4313 and COSC 4342 with a  minimum grade of "C".
+Course hours : 1
+-------------------------------------------
+
+Current Element :course
+Course id : 4
+Course name : Compiler Construction
+Course prefix : COSC-4300
+Course description : Different phases of compiler construction are studied, including lexical, syntax, semantics, and code generation. Projects leading to the complete construction of a computer for a mini set of a language are carried out. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2325 and COSC 3355 with  a "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 5
+Course name : Operating Systems
+Course prefix : COSC-4310
+Course description : The student is familiarized with the services common to most operating systems. Issues in CPU scheduling, concurrent processes, deadlocks, memory management, file management, and distributed systems are dealt with. Students are given relevant projects to support the theoretical aspects learned in class. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2325, COSC 3325, and COSC 3345 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 6
+Course name : Computer Networks
+Course prefix : COSC-4313
+Course description : Computer networks are presented via seven distinct layers: physical, data link, network, transport, session, presentation, and application layer. hardware and protocols used at different layers and in different networks are studied in detail. Different existing networks are studied as examples in every layer. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 3345 and PHYS 2326 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 7
+Course name : Computer Graphics
+Course prefix : COSC-4330
+Course description : The student is familiarized with structured graphical objects. The algorithms for transforming, clipping, and projecting objects are put into practice several projects. Hidden line/surface removal, shading/lighting models, and the problem of aliasing are studied. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 3345 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 8
+Course name : Human Computer Interaction
+Course prefix : COSC-4332
+Course description : Simple and compound classes, page and page selector classes, animation and pop up classes, configuration and deriving of new objects, application interface, overall design, and machine dependencies are studied. Application-oriented graphic user interfaces are built. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4313 and COSC 4342 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 9
+Course name : Database Management Systems
+Course prefix : COSC-4342
+Course description : Data abstraction and models, entity-relationship model, relational model, formal and commercial query languages, network and hierarchical data models, relational database design, file and system structure, indexing and hashing, query processing, and concurrency control are studied. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 3345 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 10
+Course name : Software Engineering
+Course prefix : COSC-4346
+Course description : The scope of systems analysis, systems investigation and analysis, input and output design, storage devices, file organization, sorting and merging, factors affecting file design, system design, the program specifications, design strategy, and financial applications are studied. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4313 and COSC 4342 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 11
+Course name : Numerical Methods
+Course prefix : COSC-4360
+Course description : The topics include root finding, interpolation and numerical differentiation, polynomial interpolation, estimating derivates, numerical integration, systems of linear equations, approximation by spline functions, and smoothing of data. This course satisfies the computer science course requirements toward a major in mathematics. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 1337 and MATH 2414 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 12
+Course name : Special Topics
+Course prefix : COSC-4380
+Course description : A special topic will be covered in this course at the senior level. Different sections may cover different topics in a semester. Under special topics, courses related to new developments in the area of computer science will be offered. Lec 3, Cr 3.
+Course prerequisite : N/A
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 13
+Course name : Signals and Systems
+Course prefix : COSC-4317
+Course description : An in depth study to signals and systems including discrete and multi-dimensional signals. Random variables and representation of signals in the time and frequency domains will be covered, including filter design and analysis. Topics will be reinforced with junior/senior level capstone projects. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2336 and MATH 2414 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 14
+Course name : Digital Forensics
+Course prefix : COSC-4318
+Course description : This course explores the science, technology, procedures, and laws of acquiring and analyzing evidence from digital media and computing devices. Current Forensics tools will be surveyed, and case studies will be assigned and presented in class. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4313 or consent of instructor.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 15
+Course name : Computer and Cyber Security
+Course prefix : COSC-4319
+Course description : This course is an in-depth of computer systems and network security principles. Key areas include network attacks and defenses, operating system flaws, malware, social engineering attacks digital rights management. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4313 or consent of instructor.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 16
+Course name : Artificial Intelligence
+Course prefix : COSC-4350
+Course description : This course discusses the theoretical and practical foundations of Artificial Intelligence. Principles of reasoning, perception, deduction, planning, learning, knowledge representation and problem resolution are some of the areas covered. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 3345 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 17
+Course name : Expert Systems
+Course prefix : COSC-4355
+Course description : This course covers the theoretical and practical principles of modern Expert Systems construction. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4350 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 18
+Course name : Complexity Theory
+Course prefix : COSC-4362
+Course description : This course introduces basic concepts, results and techniques in computational complexity theory, and provides a deeper insight of the power of computing using the Turing-machine model. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4361 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 19
+Course name : Digital Image Processing
+Course prefix : COSC-4333
+Course description : This course covers the basic techniques used in acquiring, processing, and displaying of digital images and video. Topics include image acquisition, spatial and frequency domain representation, image filtering, image compression, image analysis, morphological image processing and image understanding. Efficient implementation of image processing algorithms in a structured computer language is emphasized. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2336 and MATH 2414 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 20
+Course name : Advanced Computer Architecture
+Course prefix : COSC-4349
+Course description : This course covers classical and modern computer architectures. Techniques such as microprogramming and counter-decoder methods will be included. Other topics that will be studied include parallel computing architectures, their performance and programming. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 3325 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 21
+Course name : Advanced Computer Networks
+Course prefix : COSC-4315
+Course description : This course covers the design of networks and their performance. Topics that will be studied are cryptology, network programming, and secure channels, data preprocessing, pattern recognition, attribute relevance analysis, class discrimination, rule associate, correlation analysis, classification, prediction, cluster analysis and query languages. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4313 and COSC 4317 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 22
+Course name : Data Mining
+Course prefix : COSC-4343
+Course description : This course gives the fundamentals of applying artificial intelligence techniques for analysis, learning and prediction of information using data extracted from databases. Topics include data mining system architecture, data preprocessing, pattern recognition, attribute relevance analysis, class discrimination, rule association, correlation analysis, classification, prediction, cluster analysis and query languages. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4342 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 23
+Course name : Computer Vision
+Course prefix : COSC-4335
+Course description : The course covers the fundamental and advanced ideas of developing computerized procedures to extract numeric and symbolic information from images. Key ideas includes image formation, acquisition, calibration, object recognition, video understanding, stereo imaging, optical flow and classification methods. System implementation and applications in communication, medicine, robotics and manufacturing are introduced. Lec 3, Lab 1, Cr 3.
+Course prerequisite : 
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 24
+Course name : E-Commerce
+Course prefix : COSC-4321
+Course description : This course covers e-commerce implementation including e-commerce security and prevention, e-commerce scalable architecture design, Internet infrastructure, web server administration, e-payment, mobile commerce (mCommerce) systems and business-to-business (B2B) systems. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4333 with a minimum grade  of "C".
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 25
+Course name : Advanced Algorithm Analysis
+Course prefix : COSC-4345
+Course description : Both basic and advanced techniques of algorithm design and analysis are introduced. Algorithms with real applications are thoroughly studied. The notion of NP-complete problems and design and analysis techniques for approximation and randomized algorithms are also introduced. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2316, COSC 4313, and COSC 4342 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 26
+Course name : Advanced Software Engineering
+Course prefix : COSC-4347
+Course description : This course is an in-depth study of advanced software engineering principles including project management, team building, team organization, cost estimation, scheduling, description and evaluation of software architecture design, object-oriented design methodologies, and refactoring. Practical aspects of software are discussed including testing, maintenance, safety, security, quality assurance, and reliability. Lec 3, Cr 3.
+Course prerequisite : COSC 3345 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 27
+Course name : Computability Theory
+Course prefix : COSC-4361
+Course description : This course introduces elements in formal language theory and computability theory. Theoretical foundations of computer science will be covered. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4346 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 28
+Course name : Bioinformatics
+Course prefix : COSC-4381
+Course description : This course will provide an introduction to the rapidly evolving field of Bioinformatics with the overarching goal of understanding how Computer Science plays an integral part both in application and algorithmic aspects. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 3345 with "C" or better or consent of instructor.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 29
+Course name : Bioinformatics Imaging
+Course prefix : COSC-4382
+Course description : An introduction to the physical and computational principles of medical imaging systems. Topics covered include fundamentals of x-ray radiography, x-ray computed tomography, ultrasound imaging and magnetic resonance imaging. Current techniques for visualization, segmentation, and analysis of medical image data will also be discussed. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 4342 or consent of instructor.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 30
+Course name : Web Programming and Design
+Course prefix : COSC-3316
+Course description : This course focuses on the design of multimedia programs and Web applications using languages such as JAVA and HTML. The course will develop the student's skills in developing multimedia applications integrated with Web designs through the use of programming languages. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 2336 or consent of instructor.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 31
+Course name : Introduction to Computing
+Course prefix : COSC-1301
+Course description : This course provides an overview of computer information systems and introduces computer hardware, software, the Internet, and Office applications. Current issues such as the effect of computers on society, business, education, etc., are also studied. This course does not count toward major in business or computer science. Lec 3, Cr 3.
+Course prerequisite : COSC 1337 with a minimum grade of  "C".
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 32
+Course name : Programming Fundamentals I
+Course prefix : COSC-1336
+Course description : This course is an introduction to programming logic and programming. Topics include propositional calculus and Boolean algebra, numeric systems and their arithmetic, software development ethics and methodologies, data types, control structures, functions, arrays, testing and debugging. This course satisfies computer literacy requirements. Lec 3, Lab 1, Cr 3.
+Course prerequisite : MATH 0422 or ITSC 1409 with  a minimum grade of "C".
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 33
+Course name : Programming Fundamentals II
+Course prefix : COSC-1337
+Course description : The course will use a high level programming language to review structured and abstract data types, object oriented paradigm, software engineering techniques, searching and sorting techniques, and analysis of algorithm. Lec 3, Lab 1, Cr 3.
+Course prerequisite : MATH 1314, MATH 1412 or MATH 2313 or MATH 2413 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 34
+Course name : Discrete Structures
+Course prefix : COSC-2310
+Course description : This course is a study of proof techniques, asymptotic notations for growth function analysis, common functions found in algorithm analysis, manipulating and bounding summations, different methods to solve recurrences including alteration and generating functions, combinatory analysis, number theory, binomial coefficients, sets, graphs, and trees. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 1336 with a minimum  grade of "C".
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 35
+Course name : Digital Logic
+Course prefix : COSC-2312
+Course description : This course covers Boolean algebra applied to digital logic including normal form representation, resolution, simplification of digital systems. Sequential circuits and combinational circuits are studied and reinforced with projects leading to the design of a microprocessor. Lec 3, Lab 1, Cr 3.
+Course prerequisite : MATH 2313 or MATH 2413 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 36
+Course name : Machine Language and Computer Organization
+Course prefix : COSC-2325
+Course description : This assembly language intensive course covers machine cycle, digital representation of data and instructions, assemblers, loaders, macros, subroutines, and program linkages. Concepts of computer organization, operating systems, concurrent processes, synchronization and communication are introduced. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 1336 and COSC 2310 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 37
+Course name : Programming Fundamentals III
+Course prefix : COSC-2336
+Course description : This course is designed for computer science and engineering students. The course will include topics including concepts of file input/ output, recursion backtracking, data structures including queues, stacks, linked lists, trees, hash tables, and graphs. Software engineering techniques for modularity, reusability, documentation, testing, error detection and recovery are also covered. Lec 3, Lab 1, Cr 3.
+Course prerequisite : COSC 1336 with  "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 38
+Course name : Internship
+Course prefix : COSC-4386
+Course description : A practical general workplace training related to the student's general and technical course of study is supported by an individualized learning plan developed by the employer, college, and student. These guided experiences may be paid or unpaid and the course may be repeated if topics and learning outcomes vary. Internship 10, Cr 3.
+Course prerequisite : (MATH 2412 and COSC 1337) and  either COSC 2310 or CIST 3310.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 39
+Course name : Advanced Computer Networking
+Course prefix : CIST-4313
+Course description : This course provides computer networking topics based on the OSI seven layers. Networking topics include advanced administration techniques, advanced security, adding components, trouble-shooting techniques and network management. Students will install and administrate current networking operating systems in servers and clients in a lab environment. Lec 3, Cr 3.
+Course prerequisite : CIST 3313.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 40
+Course name : Computer Graphics and Digital Imaging Processing
+Course prefix : CIST-4330
+Course description : This course covers fundamental principles of graphics and digital imaging. Topics of this course include graphics acquisition, graphics optimization, image manipulations, masking, layering, compositing, image correction techniques, and video manipulating and filtering techniques. Lec 3, Cr 3.
+Course prerequisite : COSC 1336.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 41
+Course name : Systems Analysis and Design
+Course prefix : CIST-4346
+Course description : This course provides an understanding of the system development cycle. It enables students to evaluate and choose a system development methodology. Topics include systems survey, functional specifications, interface specification, data design, program design, system testing and implementation. Lec 3, Cr 3.
+Course prerequisite : CIST 3342.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 42
+Course name : Web Programming and Design
+Course prefix : CIST-3316
+Course description : This course focuses on web programming and the underlying Internet client server paradigm. Techniques to be studied include dynamic content with client-side and server-side scripting languages. Issues of security, session management and integration with databases are discussed in detail along with an overview of the fundamentals of e-Commerce. Lec 3, Cr 3.
+Course prerequisite : COSC 1336.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 43
+Course name : Concepts and Methods of Education Technology
+Course prefix : CIST-3340
+Course description : This course will provide an understanding of learning models and the impact of technology in enhancing in the learning process. This includes the application of teaching and learning strategies that integrate technology in the classroom environment. Lec 3, Cr 3.
+Course prerequisite : CIST 3316 with "C" or better.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 44
+Course name : Operating Systems Management
+Course prefix : CIST-4310
+Course description : This course introduces applied operating system concepts. Operating System theory and application are explored using varies environments. Topics include: operating system installations, configuration and troubleshooting, process management, communication and synchronization, memory and device management, directory and file management, system administration and security including user account management. Lec 3, Cr 3.
+Course prerequisite : COSC 1336.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 45
+Course name : Advanced Computer Graphics and Digital Image Processing
+Course prefix : CIST-4360
+Course description : This course introduces basic concepts of designing, creating, editing and manipulating the layout of photographic-quality animation sequences, professional images, and multi-media slide presentations and how to integrate them within the web environment. Image and audio formats, compression techniques and transmission techniques are also discussed. Lec 3, Cr 3.
+Course prerequisite : CIST 4330.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 46
+Course name : Database Management Systems
+Course prefix : CIST-3342
+Course description : This course introduces database administration systems. Topics include database access methods, data models, query languages and optimization, concurrency control, recovery, security, integrity, client server architecture, and distributed database systems. Lec 3, Cr 3.
+Course prerequisite : COSC 1336.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 47
+Course name : Foundations of Information Technology
+Course prefix : CIST-3310
+Course description : This course is designed to familiarize students with skills needed in information technology. Discrete concepts are discussed and become practical when applied to the understanding of various concepts in Computer Information Technology. Lec 3, Lab 1, Cr 3.
+Course prerequisite : MATH 2412 or MATH 1348, either  with a minimum  grade of "C", or consent of  instructor.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 48
+Course name : Computer Networks
+Course prefix : CIST-3313
+Course description : Computer Networks are introduced. Topics include ISO/OSI layer models, study of LANs and standards, inter/intra-nets and networking security. Students will not receive credit for both CIST 3330 and CIST 3313 or CIST 3342. Lec 3, Cr 3.
+Course prerequisite : COSC 1336.
+Course hours : 3
+-------------------------------------------
+
+Current Element :course
+Course id : 49
+Course name : Advanced Database Management Systems
+Course prefix : CIST-4342
+Course description : This course provides database management topics which include relational database design, formal and commercial query models, network and hierarchical data models, and concurrency control. Lec 3, Cr 3.
+Course prerequisite : CIST 3342.
+Course hours : 3
+-------------------------------------------

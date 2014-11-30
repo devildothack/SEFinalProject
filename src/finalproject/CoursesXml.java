@@ -6,11 +6,14 @@ package finalproject;
 import java.io.File; 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult; 
+import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -60,8 +63,7 @@ public class CoursesXml {
             StreamResult result = new StreamResult(new File("courses.xml"));
             trans.transform(source, result);
             
-        }catch (Exception e){
-            e.printStackTrace();
+        }catch (ParserConfigurationException | DOMException | IllegalArgumentException | TransformerException e){
         }
     }
     

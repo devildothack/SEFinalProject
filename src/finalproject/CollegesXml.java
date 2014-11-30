@@ -3,11 +3,14 @@ package finalproject;
 import java.io.File;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -58,8 +61,7 @@ public class CollegesXml {
             StreamResult result = new StreamResult(new File("colleges.xml"));
             trans.transform(source, result);
             
-        }catch (Exception e){
-            e.printStackTrace();
+        }catch (ParserConfigurationException | DOMException | IllegalArgumentException | TransformerException e){
         }
     }
     
@@ -71,34 +73,34 @@ public class CollegesXml {
         
         switch(id){
             case 0:
-                for (int i = 0; i < education.length; i++) {
-                    course.appendChild(CourseElements(doc, course, "department", education[i]));
-                }
+        for (String education1 : education) {
+            course.appendChild(CourseElements(doc, course, "department", education1));
+        }
             break;
             case 1:
-            for (int i = 0; i < nursing.length; i++) {
-                    course.appendChild(CourseElements(doc, course, "department", nursing[i]));
-                }    
+        for (String nursing1 : nursing) {
+            course.appendChild(CourseElements(doc, course, "department", nursing1));
+        }    
             break;
             case 2:
-            for (int i = 0; i < business.length; i++) {
-                    course.appendChild(CourseElements(doc, course, "department", business[i]));
-                }    
+        for (String busines : business) {
+            course.appendChild(CourseElements(doc, course, "department", busines));
+        }    
             break;
             case 3:
-            for (int i = 0; i < arts.length; i++) {
-                    course.appendChild(CourseElements(doc, course, "department", arts[i]));
-                }    
+        for (String art : arts) {
+            course.appendChild(CourseElements(doc, course, "department", art));
+        }    
             break;
             case 4:
-            for (int i = 0; i < science.length; i++) {
-                    course.appendChild(CourseElements(doc, course, "department", science[i]));
-                }    
+        for (String science1 : science) {
+            course.appendChild(CourseElements(doc, course, "department", science1));
+        }    
             break;
             case 5:
-            for (int i = 0; i < bio.length; i++) {
-                    course.appendChild(CourseElements(doc, course, "department", bio[i]));
-                }    
+        for (String bio1 : bio) {
+            course.appendChild(CourseElements(doc, course, "department", bio1));
+        }    
             break;
             default:
             break;
